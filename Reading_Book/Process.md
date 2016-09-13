@@ -43,6 +43,22 @@ More like different parallel model
 		* Eg. can close standard output and open a output file, `after fork, before exec` for redirect the output
 * Other  
 
+## Limited Direct Execution (Control process running)
+Processes, tim-sharing, keep process running efficiently while maintaining control
+* Intro: cannot just let process run; and os should regain control of the system
+* Restricted Operations
+	* Need I/O or more, you need use trap assembly instruction
+	* User mode -trap(system call)-> kernel mode
+	* trap table(initialized when boot, store in hardware); user call trap system-call number
+* Switching between Processes
+	* need regain control sometime (system call, error, timer interrupt)
+	* when switch process: context switch 
+* Concurrency
+	* disable interrupts while in kernel mode
+	* how about multiprocessors? 
+* Summary
+Keep the process running safely & OS can gain control to CPU
+
 ## Homework: 
 
 ## Ref 
