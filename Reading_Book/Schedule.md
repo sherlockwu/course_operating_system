@@ -20,3 +20,9 @@ which metrics should be important while designing schedule policies
 These solutions all have problems, oracle. 
 
 ## Ref 
+
+
+
+/p/course/cs354-skrentny/public/code
+
+/p/course/cs354-skrentny/public/students/<your-cs-login>/p1
